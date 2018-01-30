@@ -41,6 +41,14 @@ class LessonsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Lesson") as! LessonTableViewCell
         let lesson = LessonStore.instance.allLessons[indexPath.row]
+        
+        if (!lesson.passed && indexPath.row > 0){
+            cell.LessonView.backgroundColor = UIColor.gray
+            cell.LessonView.isOpaque = true
+            cell.LessonImage.isOpaque = true
+            cell.setSelected(false, animated: false)
+            cell.isUserInteractionEnabled = false
+        }
 
          //Configure the cell...
         cell.LessonView.layer.cornerRadius = cell.LessonView.frame.height/2
@@ -52,7 +60,25 @@ class LessonsTableViewController: UITableViewController {
         return 110
     }
 
- 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case "StartLesson"?:
+            //figure  out which row was just tapped
+            if let row = tableView.indexPathForSelectedRow?.row{
+                //Get the item associated with this rrow and pass it along
+                let Lesson = LessonStore.instance.allLessons[row]
+                let DetailLesson = segue.destination as! DetailedLessonViewController
+                DetailLesson.CurrentLesson = Lesson
+                DetailLesson.LessonNumber = row
+            }
+        case "Add"?: break
+            
+            //            let addWordController = segue.destination as! AddWordViewController
+            
+        default:
+            preconditionFailure("Unexpected segue identifier.")
+        }
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

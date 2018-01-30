@@ -21,6 +21,7 @@
 		2B22DE95201E899500169E1F /* LessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B22DE94201E899500169E1F /* LessonView.swift */; };
 		2B22DE97201E8EF600169E1F /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B22DE96201E8EF600169E1F /* Lesson.swift */; };
 		2B22DE99201E910E00169E1F /* LessonStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B22DE98201E910E00169E1F /* LessonStore.swift */; };
+		2B35B7B2202014E800112107 /* DetailedLessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B35B7B1202014E800112107 /* DetailedLessonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		2B22DE94201E899500169E1F /* LessonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonView.swift; sourceTree = "<group>"; };
 		2B22DE96201E8EF600169E1F /* Lesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
 		2B22DE98201E910E00169E1F /* LessonStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonStore.swift; sourceTree = "<group>"; };
+		2B35B7B1202014E800112107 /* DetailedLessonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedLessonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 				2B22DE90201E804100169E1F /* LessonsTableViewController.swift */,
 				2B22DE92201E849A00169E1F /* LessonTableViewCell.swift */,
 				2B22DE94201E899500169E1F /* LessonView.swift */,
+				2B35B7B1202014E800112107 /* DetailedLessonViewController.swift */,
 				2B22DE98201E910E00169E1F /* LessonStore.swift */,
 				2B22DE96201E8EF600169E1F /* Lesson.swift */,
 			);
@@ -301,6 +304,7 @@
 				2B22DE91201E804100169E1F /* LessonsTableViewController.swift in Sources */,
 				2B0FAFC5201B9EF200FAAFF5 /* LearnCodeApp.xcdatamodeld in Sources */,
 				2B22DE95201E899500169E1F /* LessonView.swift in Sources */,
+				2B35B7B2202014E800112107 /* DetailedLessonViewController.swift in Sources */,
 				2B0FAFBF201B9EF200FAAFF5 /* ViewController.swift in Sources */,
 				2B0FAFBD201B9EF200FAAFF5 /* AppDelegate.swift in Sources */,
 				2B22DE93201E849A00169E1F /* LessonTableViewCell.swift in Sources */,

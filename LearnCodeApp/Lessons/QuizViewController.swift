@@ -1,30 +1,28 @@
 //
-//  DetailedLessonViewController.swift
+//  QuizViewController.swift
 //  LearnCodeApp
 //
-//  Created by Robby Bowler on 1/29/18.
+//  Created by Robby Bowler on 1/31/18.
 //  Copyright © 2018 Robby Bowler. All rights reserved.
 //
 
 import UIKit
 
-class DetailedLessonViewController: UIViewController {
-    var CurrentLesson: Lesson!
-    var LessonNumber: Int!
-    @IBOutlet var LessonTitleLabel: UILabel!
+class QuizViewController: UIViewController {
+    @IBAction func SubmitButton(_ sender: UIButton) {
+        self.tabBarController?.tabBar.isHidden = false
+
+        self.navigationController!.popToRootViewController(animated: true)
+
+    }
     
-    
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tabBarController?.tabBar.isHidden = true
 
-        LessonTitleLabel.text = CurrentLesson.name
-        // Do any additional setup after loading the view.
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        self.tabBarController?.tabBar.isHidden = true
 
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

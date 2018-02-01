@@ -10,14 +10,25 @@ import UIKit
 
 class LessonsTableViewController: UITableViewController {
 
+    @IBOutlet var LessonTitleImage: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        LessonTitleImage.loadGif(name: "SpaceShip")
+//        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "SpaceShip.gif")!)
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 54/255, green: 169/255, blue: 255/255, alpha: 1)
+//        UINavigationBar.appearance().barTintColor = UIColor(red: 0, green: 0/255, blue: 205/255, alpha: 1)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = false
+
     }
 
     override func didReceiveMemoryWarning() {

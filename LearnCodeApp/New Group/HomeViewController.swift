@@ -9,18 +9,24 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
-    @IBAction func LoginButton(_ sender: UIButton) {
-        let alert = UIAlertController(title: "Login", message: nil, preferredStyle: .alert)
-        alert.addTextField{(textField) in
-            textField.placeholder="Name"
-        }
-        let action = UIAlertAction(title: "Login", style: .default){(_) in
-            let name = alert.textFields!.first!.text!
-            print(name)
-        }
-        alert.addAction(action)
-        present(alert,animated: true,completion: nil)
+    @IBOutlet var BackGroundGif: UIImageView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        BackGroundGif.loadGif(name: "Space")
     }
+
+//    @IBAction func LoginButton(_ sender: UIButton) {
+//        let alert = UIAlertController(title: "Login", message: nil, preferredStyle: .alert)
+//        alert.addTextField{(textField) in
+//            textField.placeholder="Name"
+//        }
+//        let action = UIAlertAction(title: "Login", style: .default){(_) in
+//            let name = alert.textFields!.first!.text!
+//            print(name)
+//        }
+//        alert.addAction(action)
+//        present(alert,animated: true,completion: nil)
+//    }
     
 }

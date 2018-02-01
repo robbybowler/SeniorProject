@@ -22,6 +22,11 @@
 		2B22DE97201E8EF600169E1F /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B22DE96201E8EF600169E1F /* Lesson.swift */; };
 		2B22DE99201E910E00169E1F /* LessonStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B22DE98201E910E00169E1F /* LessonStore.swift */; };
 		2B35B7B2202014E800112107 /* DetailedLessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B35B7B1202014E800112107 /* DetailedLessonViewController.swift */; };
+		2BCACABB2022E62300FC04CE /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCACABA2022E62300FC04CE /* QuizViewController.swift */; };
+		2BCACABD2023750500FC04CE /* GifFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCACABC2023750500FC04CE /* GifFile.swift */; };
+		2BCACABF2023760F00FC04CE /* SpaceShip.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2BCACABE2023760E00FC04CE /* SpaceShip.gif */; };
+		2BCACAC12023780500FC04CE /* Space.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2BCACAC02023780500FC04CE /* Space.gif */; };
+		2BCACAC620237A1600FC04CE /* Shapes.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2BCACAC520237A1500FC04CE /* Shapes.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +68,11 @@
 		2B22DE96201E8EF600169E1F /* Lesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
 		2B22DE98201E910E00169E1F /* LessonStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonStore.swift; sourceTree = "<group>"; };
 		2B35B7B1202014E800112107 /* DetailedLessonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedLessonViewController.swift; sourceTree = "<group>"; };
+		2BCACABA2022E62300FC04CE /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		2BCACABC2023750500FC04CE /* GifFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifFile.swift; sourceTree = "<group>"; };
+		2BCACABE2023760E00FC04CE /* SpaceShip.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SpaceShip.gif; sourceTree = "<group>"; };
+		2BCACAC02023780500FC04CE /* Space.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Space.gif; sourceTree = "<group>"; };
+		2BCACAC520237A1500FC04CE /* Shapes.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Shapes.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,10 +123,11 @@
 		2B0FAFBB201B9EF200FAAFF5 /* LearnCodeApp */ = {
 			isa = PBXGroup;
 			children = (
+				2B0FAFC6201B9EF200FAAFF5 /* Assets.xcassets */,
 				2B0FAFBC201B9EF200FAAFF5 /* AppDelegate.swift */,
 				2B0FAFBE201B9EF200FAAFF5 /* ViewController.swift */,
 				2B0FAFC0201B9EF200FAAFF5 /* Main.storyboard */,
-				2B0FAFC6201B9EF200FAAFF5 /* Assets.xcassets */,
+				2BCACAC22023781700FC04CE /* Gifs */,
 				2B0FAFEF201BCE9100FAAFF5 /* Home */,
 				2B22DE8D201E7FB900169E1F /* Lessons */,
 				2B0FAFC8201B9EF200FAAFF5 /* LaunchScreen.storyboard */,
@@ -161,9 +172,21 @@
 				2B22DE94201E899500169E1F /* LessonView.swift */,
 				2B35B7B1202014E800112107 /* DetailedLessonViewController.swift */,
 				2B22DE98201E910E00169E1F /* LessonStore.swift */,
+				2BCACABA2022E62300FC04CE /* QuizViewController.swift */,
 				2B22DE96201E8EF600169E1F /* Lesson.swift */,
 			);
 			path = Lessons;
+			sourceTree = "<group>";
+		};
+		2BCACAC22023781700FC04CE /* Gifs */ = {
+			isa = PBXGroup;
+			children = (
+				2BCACABC2023750500FC04CE /* GifFile.swift */,
+				2BCACAC520237A1500FC04CE /* Shapes.gif */,
+				2BCACABE2023760E00FC04CE /* SpaceShip.gif */,
+				2BCACAC02023780500FC04CE /* Space.gif */,
+			);
+			path = Gifs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +298,9 @@
 			files = (
 				2B0FAFCA201B9EF200FAAFF5 /* LaunchScreen.storyboard in Resources */,
 				2B0FAFC7201B9EF200FAAFF5 /* Assets.xcassets in Resources */,
+				2BCACAC12023780500FC04CE /* Space.gif in Resources */,
+				2BCACABF2023760F00FC04CE /* SpaceShip.gif in Resources */,
+				2BCACAC620237A1600FC04CE /* Shapes.gif in Resources */,
 				2B0FAFC2201B9EF200FAAFF5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,7 +332,9 @@
 				2B22DE95201E899500169E1F /* LessonView.swift in Sources */,
 				2B35B7B2202014E800112107 /* DetailedLessonViewController.swift in Sources */,
 				2B0FAFBF201B9EF200FAAFF5 /* ViewController.swift in Sources */,
+				2BCACABD2023750500FC04CE /* GifFile.swift in Sources */,
 				2B0FAFBD201B9EF200FAAFF5 /* AppDelegate.swift in Sources */,
+				2BCACABB2022E62300FC04CE /* QuizViewController.swift in Sources */,
 				2B22DE93201E849A00169E1F /* LessonTableViewCell.swift in Sources */,
 				2B0FAFF1201BCEFC00FAAFF5 /* HomeViewController.swift in Sources */,
 				2B22DE99201E910E00169E1F /* LessonStore.swift in Sources */,
@@ -476,6 +504,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XWKM3D78BN;
 				INFOPLIST_FILE = LearnCodeApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.CodeChangers.LearnCodeApp;
@@ -490,6 +519,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XWKM3D78BN;
 				INFOPLIST_FILE = LearnCodeApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.CodeChangers.LearnCodeApp;

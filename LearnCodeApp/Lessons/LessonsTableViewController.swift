@@ -8,17 +8,25 @@
 
 import UIKit
 
+struct StretchHeader {
+    let headerHeight: CGFloat = 283
+    let headerCut: CGFloat = 50
+}
+
 class LessonsTableViewController: UITableViewController {
 
     @IBOutlet var LessonTitleImage: UIImageView!
+    
+    var headerView: UIView!
+    var newHeaderLayer: CAShapeLayer!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         LessonTitleImage.loadGif(name: "SpaceShip")
-//        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "SpaceShip.gif")!)
+//        LessonTitleImage.image = #imageLiteral(resourceName: "ComputerGirl")
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 54/255, green: 169/255, blue: 255/255, alpha: 1)
-//        UINavigationBar.appearance().barTintColor = UIColor(red: 0, green: 0/255, blue: 205/255, alpha: 1)
+        updateView()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -28,6 +36,54 @@ class LessonsTableViewController: UITableViewController {
     }
     override func viewDidAppear(_ animated: Bool) {
         self.tabBarController?.tabBar.isHidden = false
+        tableView.reloadData()
+
+
+    }
+    
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        setNewView()
+    }
+    
+    func updateView(){
+        headerView = tableView.tableHeaderView
+        tableView.tableHeaderView = nil
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.addSubview(headerView)
+
+        newHeaderLayer = CAShapeLayer()
+        newHeaderLayer.fillColor = UIColor.black.cgColor
+        headerView.layer.mask = newHeaderLayer
+        
+        let newHeight = StretchHeader().headerHeight
+        
+        tableView.contentInset = UIEdgeInsets(top: newHeight - 50, left: 0, bottom: 0, right: 0)
+        tableView.contentOffset = CGPoint(x: 0, y: -newHeight)
+        setNewView()
+        
+    }
+    
+    func setNewView(){
+        let newHeight = StretchHeader().headerHeight
+
+        var getHeaderFrame = CGRect(x: 0, y: -newHeight, width: tableView.bounds.width, height: StretchHeader().headerHeight)
+        
+
+
+        
+        if (tableView.contentOffset.y + 565 ) < (newHeight) {
+            getHeaderFrame.origin.y = tableView.contentOffset.y
+            getHeaderFrame.size.height = -tableView.contentOffset.y
+            
+        }
+        headerView.frame = getHeaderFrame
+        
+        let cutDir = UIBezierPath()
+        cutDir.move(to: CGPoint(x: 0, y: 0))
+        cutDir.addLine(to: CGPoint(x: getHeaderFrame.width, y: 0))
+        cutDir.addLine(to: CGPoint(x: getHeaderFrame.width, y: getHeaderFrame.height))
+        cutDir.addLine(to: CGPoint(x: 0, y: getHeaderFrame.height))
+        newHeaderLayer.path = cutDir.cgPath
 
     }
 
@@ -52,11 +108,18 @@ class LessonsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Lesson") as! LessonTableViewCell
         let lesson = LessonStore.instance.allLessons[indexPath.row]
-        
-        if (!lesson.passed && indexPath.row > 0){
-            cell.LessonView.backgroundColor = UIColor.gray
-            cell.LessonView.isOpaque = true
-            cell.LessonImage.isOpaque = true
+        if (lesson.passed){
+            cell.LessonView.backgroundColor = UIColor(red: 0/255, green: 195/255, blue: 255/255, alpha: 1.0)
+            cell.LessonNameLabel.alpha = 1.0
+            cell.LessonImage.alpha = 1.0
+            cell.setSelected(true, animated: true)
+            cell.isUserInteractionEnabled = true
+
+        }
+        else{
+            cell.LessonView.backgroundColor = UIColor(red: 159/255, green: 175/255, blue: 216/255, alpha: 0.7)
+            cell.LessonNameLabel.alpha = 0.2
+            cell.LessonImage.alpha = 0.2
             cell.setSelected(false, animated: false)
             cell.isUserInteractionEnabled = false
         }
@@ -68,7 +131,10 @@ class LessonsTableViewController: UITableViewController {
         return cell
     }
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 110
+        return 120
+    }
+    override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return UITableViewAutomaticDimension
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

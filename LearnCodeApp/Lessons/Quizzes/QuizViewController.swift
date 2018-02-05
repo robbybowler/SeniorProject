@@ -20,6 +20,8 @@ class QuizViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tabBarController?.tabBar.isHidden = true
+        
+        LessonStore.instance.allLessons[1].passed = true
 
 
         // Do any additional setup after loading the view.

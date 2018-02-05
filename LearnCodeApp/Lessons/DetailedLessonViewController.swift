@@ -10,6 +10,7 @@ import UIKit
 
 class DetailedLessonViewController: UIViewController {
     var CurrentLesson: Lesson!
+    @IBOutlet var BackgroundImage: UIImageView!
     var LessonNumber: Int!
     @IBOutlet var LessonTitleLabel: UILabel!
     
@@ -17,7 +18,7 @@ class DetailedLessonViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tabBarController?.tabBar.isHidden = true
-
+//        BackgroundImage.loadGif(name: "ShinySpace")
         LessonTitleLabel.text = CurrentLesson.name
         // Do any additional setup after loading the view.
     }

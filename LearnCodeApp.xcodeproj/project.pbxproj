@@ -22,6 +22,7 @@
 		2B22DE97201E8EF600169E1F /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B22DE96201E8EF600169E1F /* Lesson.swift */; };
 		2B22DE99201E910E00169E1F /* LessonStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B22DE98201E910E00169E1F /* LessonStore.swift */; };
 		2B35B7B2202014E800112107 /* DetailedLessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B35B7B1202014E800112107 /* DetailedLessonViewController.swift */; };
+		2B64ECB02024C6FD00146AE9 /* ShinySpace.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2B64ECAF2024C6FD00146AE9 /* ShinySpace.gif */; };
 		2BCACABB2022E62300FC04CE /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCACABA2022E62300FC04CE /* QuizViewController.swift */; };
 		2BCACABD2023750500FC04CE /* GifFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCACABC2023750500FC04CE /* GifFile.swift */; };
 		2BCACABF2023760F00FC04CE /* SpaceShip.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2BCACABE2023760E00FC04CE /* SpaceShip.gif */; };
@@ -68,6 +69,7 @@
 		2B22DE96201E8EF600169E1F /* Lesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
 		2B22DE98201E910E00169E1F /* LessonStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonStore.swift; sourceTree = "<group>"; };
 		2B35B7B1202014E800112107 /* DetailedLessonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedLessonViewController.swift; sourceTree = "<group>"; };
+		2B64ECAF2024C6FD00146AE9 /* ShinySpace.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ShinySpace.gif; sourceTree = "<group>"; };
 		2BCACABA2022E62300FC04CE /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		2BCACABC2023750500FC04CE /* GifFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifFile.swift; sourceTree = "<group>"; };
 		2BCACABE2023760E00FC04CE /* SpaceShip.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SpaceShip.gif; sourceTree = "<group>"; };
@@ -172,16 +174,33 @@
 				2B22DE94201E899500169E1F /* LessonView.swift */,
 				2B35B7B1202014E800112107 /* DetailedLessonViewController.swift */,
 				2B22DE98201E910E00169E1F /* LessonStore.swift */,
-				2BCACABA2022E62300FC04CE /* QuizViewController.swift */,
 				2B22DE96201E8EF600169E1F /* Lesson.swift */,
+				2B64ECB22027BD4500146AE9 /* Quizzes */,
+				2B64ECB12027BD1800146AE9 /* Tutorials */,
 			);
 			path = Lessons;
+			sourceTree = "<group>";
+		};
+		2B64ECB12027BD1800146AE9 /* Tutorials */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tutorials;
+			sourceTree = "<group>";
+		};
+		2B64ECB22027BD4500146AE9 /* Quizzes */ = {
+			isa = PBXGroup;
+			children = (
+				2BCACABA2022E62300FC04CE /* QuizViewController.swift */,
+			);
+			path = Quizzes;
 			sourceTree = "<group>";
 		};
 		2BCACAC22023781700FC04CE /* Gifs */ = {
 			isa = PBXGroup;
 			children = (
 				2BCACABC2023750500FC04CE /* GifFile.swift */,
+				2B64ECAF2024C6FD00146AE9 /* ShinySpace.gif */,
 				2BCACAC520237A1500FC04CE /* Shapes.gif */,
 				2BCACABE2023760E00FC04CE /* SpaceShip.gif */,
 				2BCACAC02023780500FC04CE /* Space.gif */,
@@ -301,6 +320,7 @@
 				2BCACAC12023780500FC04CE /* Space.gif in Resources */,
 				2BCACABF2023760F00FC04CE /* SpaceShip.gif in Resources */,
 				2BCACAC620237A1600FC04CE /* Shapes.gif in Resources */,
+				2B64ECB02024C6FD00146AE9 /* ShinySpace.gif in Resources */,
 				2B0FAFC2201B9EF200FAAFF5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

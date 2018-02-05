@@ -32,8 +32,24 @@ class LessonStore: NSObject {
         allLessons.append(Lesson5)
         allLessons.append(Lesson6)
         allLessons.append(Lesson7)
-
-
+        
+        allLessons[0].passed = true
     }
+//    func setUpLessonData(){
+//        for lesson in allLessons {
+//            if (lesson.passed){
+//                
+//                cell.LessonView.backgroundColor = UIColor(red: 159/255, green: 175/255, blue: 216/255, alpha: 0.7)
+//                cell.LessonNameLabel.alpha = 0.2
+//                cell.LessonImage.alpha = 0.2
+//                cell.setSelected(false, animated: false)
+//                cell.isUserInteractionEnabled = false
+//            }
+//        }
+
+//    }
+    
+
+    
 
 }

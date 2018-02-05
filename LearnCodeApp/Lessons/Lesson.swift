@@ -12,7 +12,7 @@ class Lesson: NSObject {
     
     let name: String
     let lessonImage: UIImage
-    let passed: Bool
+    var passed: Bool
     
     init(name: String, lessonImage: UIImage){
         self.name = name

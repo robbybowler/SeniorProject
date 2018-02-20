@@ -57,7 +57,7 @@ class LessonsTableViewController: UITableViewController {
         
         let newHeight = StretchHeader().headerHeight
         
-        tableView.contentInset = UIEdgeInsets(top: newHeight - 50, left: 0, bottom: 0, right: 0)
+        tableView.contentInset = UIEdgeInsets(top: newHeight, left: 0, bottom: 0, right: 0)
         tableView.contentOffset = CGPoint(x: 0, y: -newHeight)
         setNewView()
         

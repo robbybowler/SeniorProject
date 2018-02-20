@@ -10,15 +10,16 @@ import UIKit
 
 class DetailedLessonViewController: UIViewController {
     var CurrentLesson: Lesson!
-    @IBOutlet var BackgroundImage: UIImageView!
     var LessonNumber: Int!
     @IBOutlet var LessonTitleLabel: UILabel!
     
+    @IBOutlet var StartButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tabBarController?.tabBar.isHidden = true
-//        BackgroundImage.loadGif(name: "ShinySpace")
+        StartButton.layer.cornerRadius = StartButton.frame.height/2
+//        BackgroundImage.loadGif(name: "Space")
         LessonTitleLabel.text = CurrentLesson.name
         // Do any additional setup after loading the view.
     }

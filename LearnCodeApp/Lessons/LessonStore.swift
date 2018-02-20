@@ -15,7 +15,7 @@ class LessonStore: NSObject {
     
     override init(){
 
-        let Lesson1 = Lesson(name: "Welcome to Python!",lessonImage: #imageLiteral(resourceName: "PythonLogo"))
+        let Lesson1 = Lesson(name: "Welcome to Python!",lessonImage: #imageLiteral(resourceName: "SpaceShip"))
 
         let Lesson2 = Lesson(name: "What Are Variables?", lessonImage: #imageLiteral(resourceName: "ComputerGirl"))
         let Lesson3 = Lesson(name: "Lesson 3", lessonImage: #imageLiteral(resourceName: "ComputerGirl"))

@@ -23,9 +23,10 @@
 		2B22DE97201E8EF600169E1F /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B22DE96201E8EF600169E1F /* Lesson.swift */; };
 		2B22DE99201E910E00169E1F /* LessonStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B22DE98201E910E00169E1F /* LessonStore.swift */; };
 		2B35B7B2202014E800112107 /* DetailedLessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B35B7B1202014E800112107 /* DetailedLessonViewController.swift */; };
+		2B3C4F57205327E5004EEB22 /* FillBlankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3C4F56205327E5004EEB22 /* FillBlankViewController.swift */; };
 		2B64ECB02024C6FD00146AE9 /* ShinySpace.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2B64ECAF2024C6FD00146AE9 /* ShinySpace.gif */; };
+		2B674D2320435258001740ED /* RevealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B674D2220435258001740ED /* RevealViewController.swift */; };
 		2B9C386D202D6E3E00478AEE /* LessonMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9C386C202D6E3E00478AEE /* LessonMapViewController.swift */; };
-		2B9C386F202D72B900478AEE /* LessonMapScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9C386E202D72B900478AEE /* LessonMapScrollView.swift */; };
 		2BCACABB2022E62300FC04CE /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCACABA2022E62300FC04CE /* QuizViewController.swift */; };
 		2BCACABD2023750500FC04CE /* GifFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCACABC2023750500FC04CE /* GifFile.swift */; };
 		2BCACABF2023760F00FC04CE /* SpaceShip.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2BCACABE2023760E00FC04CE /* SpaceShip.gif */; };
@@ -73,9 +74,10 @@
 		2B22DE96201E8EF600169E1F /* Lesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
 		2B22DE98201E910E00169E1F /* LessonStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonStore.swift; sourceTree = "<group>"; };
 		2B35B7B1202014E800112107 /* DetailedLessonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedLessonViewController.swift; sourceTree = "<group>"; };
+		2B3C4F56205327E5004EEB22 /* FillBlankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillBlankViewController.swift; sourceTree = "<group>"; };
 		2B64ECAF2024C6FD00146AE9 /* ShinySpace.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ShinySpace.gif; sourceTree = "<group>"; };
+		2B674D2220435258001740ED /* RevealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevealViewController.swift; sourceTree = "<group>"; };
 		2B9C386C202D6E3E00478AEE /* LessonMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonMapViewController.swift; sourceTree = "<group>"; };
-		2B9C386E202D72B900478AEE /* LessonMapScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonMapScrollView.swift; sourceTree = "<group>"; };
 		2BCACABA2022E62300FC04CE /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		2BCACABC2023750500FC04CE /* GifFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifFile.swift; sourceTree = "<group>"; };
 		2BCACABE2023760E00FC04CE /* SpaceShip.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SpaceShip.gif; sourceTree = "<group>"; };
@@ -215,6 +217,8 @@
 		2B5CE02C203602A200668C0F /* LessonLayout */ = {
 			isa = PBXGroup;
 			children = (
+				2B674D2220435258001740ED /* RevealViewController.swift */,
+				2B3C4F56205327E5004EEB22 /* FillBlankViewController.swift */,
 			);
 			path = LessonLayout;
 			sourceTree = "<group>";
@@ -239,7 +243,6 @@
 			children = (
 				2B9C386C202D6E3E00478AEE /* LessonMapViewController.swift */,
 				2B5CE02C203602A200668C0F /* LessonLayout */,
-				2B9C386E202D72B900478AEE /* LessonMapScrollView.swift */,
 			);
 			path = LessonMap;
 			sourceTree = "<group>";
@@ -517,11 +520,19 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-LearnCodeApp/Pods-LearnCodeApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework",
+				"${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework",
+				"${BUILT_PRODUCTS_DIR}/SAMCubicSpline/SAMCubicSpline.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftCubicSpline/SwiftCubicSpline.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DynamicBlurView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopupDialog.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SAMCubicSpline.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftCubicSpline.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -568,7 +579,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B9C386F202D72B900478AEE /* LessonMapScrollView.swift in Sources */,
 				2B22DE97201E8EF600169E1F /* Lesson.swift in Sources */,
 				2B22DE91201E804100169E1F /* LessonsTableViewController.swift in Sources */,
 				2B0FAFC5201B9EF200FAAFF5 /* LearnCodeApp.xcdatamodeld in Sources */,
@@ -577,10 +587,12 @@
 				2BCACABD2023750500FC04CE /* GifFile.swift in Sources */,
 				2B0FAFBD201B9EF200FAAFF5 /* AppDelegate.swift in Sources */,
 				2BCACABB2022E62300FC04CE /* QuizViewController.swift in Sources */,
+				2B3C4F57205327E5004EEB22 /* FillBlankViewController.swift in Sources */,
 				2B22DE93201E849A00169E1F /* LessonTableViewCell.swift in Sources */,
 				2B0FAFF1201BCEFC00FAAFF5 /* HomeViewController.swift in Sources */,
 				2B22DE99201E910E00169E1F /* LessonStore.swift in Sources */,
 				2B9C386D202D6E3E00478AEE /* LessonMapViewController.swift in Sources */,
+				2B674D2320435258001740ED /* RevealViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

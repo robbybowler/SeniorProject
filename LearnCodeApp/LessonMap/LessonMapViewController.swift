@@ -19,8 +19,10 @@ class LessonMapViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet var scrollView: UIScrollView!
     
+    @IBOutlet var imageView1HeightConstraint: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
+        houseImage.image = #imageLiteral(resourceName: "Composed-4")
         self.navigationController?.navigationBar.isHidden = true
 
 //        let doYourPath = createRectangle(x:Int(houseImage.frame.width/2),y:Int(houseImage.frame.height - 300))
@@ -32,7 +34,7 @@ class LessonMapViewController: UIViewController, UIScrollViewDelegate {
 //
 //        self.houseImage.layer.addSublayer(layer)
         print(houseImage.frame.height)
-        scrollHeightContraint.constant = houseImage.frame.height
+        scrollHeightContraint.constant = houseImage.frame.height*4
         scrollView.bounces = false
         
         // Do any additional setup after loading the view.
@@ -47,7 +49,7 @@ class LessonMapViewController: UIViewController, UIScrollViewDelegate {
         SVProgressHUD.setBackgroundColor(UIColor(displayP3Red: 0.5, green: 0.5, blue: 0.5, alpha: 0.8))
         
         //        scrollView.setContentOffset(CGPoint(x: 0, y:scrollView.contentSize.height - scrollView.frame.height ), animated: false)
-        scrollView.setContentOffset(CGPoint(x: 0, y:houseImage.frame.height - scrollView.frame.height ), animated: false)
+        scrollView.setContentOffset(CGPoint(x: 0, y:houseImage.frame.height*4 - scrollView.frame.height), animated: false)
         ExampleButton.layer.cornerRadius = ExampleButton.frame.height/2
         ExampleButton.layer.borderWidth = 1
         //        ExampleButton.layer.borderColor = (UIColor(red: 159/255, green: 175/255, blue: 216/255, alpha: 0.7) as? CGColor)

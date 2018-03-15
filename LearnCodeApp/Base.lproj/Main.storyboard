@@ -311,59 +311,124 @@
             <objects>
                 <viewController id="KDF-ID-0uo" customClass="LessonMapViewController" customModule="LearnCodeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nwr-lu-bZX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="5000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="6000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xXM-Xp-Zhh">
-                                <rect key="frame" x="0.0" y="64" width="375" height="4887"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="5887"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="igz-6n-Uda">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="2860"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="5000"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Composed-All_preview" translatesAutoresizingMaskIntoConstraints="NO" id="K8q-aK-3S4">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="2707"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xPS-xo-8sp">
-                                                <rect key="frame" x="172" y="1033" width="30" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="1">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="buttonClicked:" destination="KDF-ID-0uo" eventType="touchUpInside" id="r2K-9B-0gk"/>
-                                                    <segue destination="NVR-hc-9tD" kind="show" id="Wwb-6t-wxX"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycr-uT-SYv">
-                                                <rect key="frame" x="172" y="952" width="30" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="2">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="buttonClicked:" destination="KDF-ID-0uo" eventType="touchUpInside" id="l2e-hW-fze"/>
-                                                    <segue destination="9sf-0n-jKq" kind="show" id="52K-1Z-khY"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wyy-SO-BEU">
-                                                <rect key="frame" x="172" y="882" width="30" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="3">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="buttonClicked:" destination="KDF-ID-0uo" eventType="touchUpInside" id="ftr-Hf-raO"/>
-                                                    <segue destination="fhv-EU-rfl" kind="show" id="g27-jb-OTC"/>
-                                                </connections>
-                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="2IU-MV-23M">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="5000"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dJk-nC-X5P">
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1250"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Composed-4-2" translatesAutoresizingMaskIntoConstraints="NO" id="K8q-aK-3S4">
+                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="1250"/>
+                                                            </imageView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="K8q-aK-3S4" firstAttribute="top" secondItem="dJk-nC-X5P" secondAttribute="top" id="29e-4n-Onj"/>
+                                                            <constraint firstItem="K8q-aK-3S4" firstAttribute="leading" secondItem="dJk-nC-X5P" secondAttribute="leading" id="9Uy-Al-mc2"/>
+                                                            <constraint firstAttribute="trailing" secondItem="K8q-aK-3S4" secondAttribute="trailing" id="WB3-mM-SRP"/>
+                                                            <constraint firstAttribute="bottom" secondItem="K8q-aK-3S4" secondAttribute="bottom" id="bGK-AL-b0q"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="smP-r8-lAw">
+                                                        <rect key="frame" x="0.0" y="1250" width="375" height="1250"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wyy-SO-BEU">
+                                                                <rect key="frame" x="176" y="646" width="30" height="30"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <state key="normal" title="3">
+                                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="buttonClicked:" destination="KDF-ID-0uo" eventType="touchUpInside" id="ftr-Hf-raO"/>
+                                                                    <segue destination="fhv-EU-rfl" kind="show" id="g27-jb-OTC"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycr-uT-SYv">
+                                                                <rect key="frame" x="176" y="646" width="30" height="30"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <state key="normal" title="2">
+                                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="buttonClicked:" destination="KDF-ID-0uo" eventType="touchUpInside" id="l2e-hW-fze"/>
+                                                                    <segue destination="9sf-0n-jKq" kind="show" id="52K-1Z-khY"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xPS-xo-8sp">
+                                                                <rect key="frame" x="176" y="757" width="30" height="30"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <state key="normal" title="1">
+                                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="buttonClicked:" destination="KDF-ID-0uo" eventType="touchUpInside" id="r2K-9B-0gk"/>
+                                                                    <segue destination="NVR-hc-9tD" kind="show" id="Wwb-6t-wxX"/>
+                                                                </connections>
+                                                            </button>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Composed-3-3" translatesAutoresizingMaskIntoConstraints="NO" id="lIM-4r-fPd">
+                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="1250"/>
+                                                            </imageView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="lIM-4r-fPd" firstAttribute="top" secondItem="smP-r8-lAw" secondAttribute="top" id="ENB-Zm-vy5"/>
+                                                            <constraint firstItem="lIM-4r-fPd" firstAttribute="leading" secondItem="smP-r8-lAw" secondAttribute="leading" id="ZXJ-1a-8dZ"/>
+                                                            <constraint firstAttribute="trailing" secondItem="lIM-4r-fPd" secondAttribute="trailing" id="j4z-oB-Ndu"/>
+                                                            <constraint firstAttribute="bottom" secondItem="lIM-4r-fPd" secondAttribute="bottom" id="zYh-9k-y9k"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kwZ-hm-y28">
+                                                        <rect key="frame" x="0.0" y="2500" width="375" height="1250"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Composed-2-2" translatesAutoresizingMaskIntoConstraints="NO" id="ab1-2Z-Dg7">
+                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="1250"/>
+                                                            </imageView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="ab1-2Z-Dg7" secondAttribute="trailing" id="LdU-aq-9wt"/>
+                                                            <constraint firstAttribute="bottom" secondItem="ab1-2Z-Dg7" secondAttribute="bottom" id="ez6-1c-6Zc"/>
+                                                            <constraint firstItem="ab1-2Z-Dg7" firstAttribute="leading" secondItem="kwZ-hm-y28" secondAttribute="leading" id="jHR-Up-0Xi"/>
+                                                            <constraint firstItem="ab1-2Z-Dg7" firstAttribute="top" secondItem="kwZ-hm-y28" secondAttribute="top" id="vi6-yB-uqb"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FSb-Dl-UZx">
+                                                        <rect key="frame" x="0.0" y="3750" width="375" height="1250"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Composed-1_preview" translatesAutoresizingMaskIntoConstraints="NO" id="GVg-FR-fZ8">
+                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="1250"/>
+                                                            </imageView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="GVg-FR-fZ8" firstAttribute="top" secondItem="FSb-Dl-UZx" secondAttribute="top" id="Wfc-Rg-0ro"/>
+                                                            <constraint firstItem="GVg-FR-fZ8" firstAttribute="leading" secondItem="FSb-Dl-UZx" secondAttribute="leading" id="Zc8-Q5-lDN"/>
+                                                            <constraint firstAttribute="bottom" secondItem="GVg-FR-fZ8" secondAttribute="bottom" id="ezR-ab-ymc"/>
+                                                            <constraint firstAttribute="trailing" secondItem="GVg-FR-fZ8" secondAttribute="trailing" id="x5E-0u-AUW"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="2860" id="2FA-fD-5AR"/>
+                                            <constraint firstAttribute="height" constant="5000" id="2FA-fD-5AR"/>
+                                            <constraint firstAttribute="trailing" secondItem="2IU-MV-23M" secondAttribute="trailing" id="RZk-aw-Dgq"/>
+                                            <constraint firstItem="2IU-MV-23M" firstAttribute="leading" secondItem="igz-6n-Uda" secondAttribute="leading" id="VH2-WH-DdR"/>
+                                            <constraint firstItem="2IU-MV-23M" firstAttribute="top" secondItem="igz-6n-Uda" secondAttribute="top" id="f3A-z5-EPe"/>
+                                            <constraint firstAttribute="bottom" secondItem="2IU-MV-23M" secondAttribute="bottom" id="lzX-05-Ddc"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -391,7 +456,7 @@
                     <navigationItem key="navigationItem" id="DaP-oR-P38"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="5000"/>
+                    <size key="freeformSize" width="375" height="6000"/>
                     <connections>
                         <outlet property="ExampleButton" destination="xPS-xo-8sp" id="fgt-8K-waQ"/>
                         <outlet property="houseImage" destination="K8q-aK-3S4" id="bgM-wj-Jcw"/>
@@ -631,6 +696,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Composed-All_preview" width="289" height="2048"/>
+        <image name="Composed-1_preview" width="576" height="2048"/>
+        <image name="Composed-2-2" width="1081" height="3840"/>
+        <image name="Composed-3-3" width="1081" height="3840"/>
+        <image name="Composed-4-2" width="1081" height="3840"/>
     </resources>
 </document>

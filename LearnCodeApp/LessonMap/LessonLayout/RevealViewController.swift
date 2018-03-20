@@ -12,7 +12,7 @@ import PopupDialog
 class RevealViewController: UIViewController {
     @IBOutlet var infoView: UIView!
     
-    @IBOutlet var learnView: UIView!
+    @IBOutlet var exampleView: UIView!
     @IBOutlet var answerLabel: UILabel!
     
     override func viewDidLoad() {
@@ -87,7 +87,7 @@ class RevealViewController: UIViewController {
         
         label1.text = "variable1 = \"Some words\" \nvariable2 = \"matter\" \nsentence = variable1 + variable2 \nprint(sentence)"
         
-        learnView.addSubview(label1)
+        exampleView.addSubview(label1)
         
         answerLabel.text = answer
         answerLabel.isHidden = true

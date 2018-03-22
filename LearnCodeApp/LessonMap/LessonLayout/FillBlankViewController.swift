@@ -44,6 +44,9 @@ class FillBlankViewController: UIViewController {
         exampleView.addSubview(exampleLabel)
 
     }
+    @IBAction func buttonAction(sender: UIButton!) {
+        performSegue(withIdentifier: "Reveal", sender: sender)
+    }
     
     func answerModal(correct: Bool){
         if correct{
@@ -52,10 +55,11 @@ class FillBlankViewController: UIViewController {
 
 //            let image = UIImage(named: "none")
             let popup = PopupDialog(title: title, message: message, image: nil)
+            
             let buttonOne = DefaultButton(title: "Next", height: 60) {
-                print("Ah, maybe next time :)")
-                self.navigationController?.popToRootViewController(animated: true)
+//                 self.navigationController?.popToRootViewController(animated: true)
             }
+             buttonOne.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
             buttonOne.backgroundColor = UIColor.green
             popup.addButtons([buttonOne])
             let dialogAppearance = PopupDialogDefaultView.appearance()
@@ -79,6 +83,7 @@ class FillBlankViewController: UIViewController {
         
 
     }
+    
     @IBAction func button1(_ sender: UIButton) {
         answerModal(correct: true)
     }

@@ -269,7 +269,7 @@
                         <outlet property="button2" destination="nOE-xh-5uP" id="kcY-Bo-sZv"/>
                         <outlet property="exampleView" destination="eWM-Ge-n1w" id="SMd-vK-BOq"/>
                         <outlet property="infoView" destination="v3s-bD-xtl" id="jew-Pn-zo7"/>
-                        <segue destination="9sf-0n-jKq" kind="show" identifier="FillToReveal" id="Lr3-un-WCc"/>
+                        <segue destination="9sf-0n-jKq" kind="show" identifier="Reveal" id="Lr3-un-WCc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oc0-Qp-K3Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -321,7 +321,7 @@
                         <outlet property="answerLabel" destination="hh5-rl-ouT" id="hYg-BY-yFp"/>
                         <outlet property="exampleView" destination="BH8-Sk-Af8" id="LHF-Td-KBb"/>
                         <outlet property="infoView" destination="f4W-YO-LZY" id="csK-CL-ER0"/>
-                        <segue destination="NVR-hc-9tD" kind="show" identifier="RevealToFill" id="CK2-Pd-uLl"/>
+                        <segue destination="NVR-hc-9tD" kind="show" identifier="Fill" id="CK2-Pd-uLl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8NZ-rr-ws2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -375,7 +375,7 @@
         <image name="Composed-5" width="1080" height="3840"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="HdG-e5-OOx"/>
-        <segue reference="KC4-NS-Sze"/>
+        <segue reference="Lr3-un-WCc"/>
+        <segue reference="CK2-Pd-uLl"/>
     </inferredMetricsTieBreakers>
 </document>

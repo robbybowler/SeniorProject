@@ -62,15 +62,19 @@ class LessonMapViewController: UIViewController, UIScrollViewDelegate {
     }
     
     @IBAction func buttonClicked(_ sender: UIButton) {
+        var id = ""
         if sender.tag == 0{
-           performSegue(withIdentifier: "MapToFill", sender: sender)
+            id = "MapToFill"
         }
         if sender.tag == 1{
-            performSegue(withIdentifier: "MapToReveal", sender: sender)
+            id = "MapToReveal"
         }
         if sender.tag == 2{
-            performSegue(withIdentifier: "MapToFill", sender: sender)
+            id = "MapToFill"
+
         }
+        performSegue(withIdentifier: id, sender: sender)
+
     }
     
     /*

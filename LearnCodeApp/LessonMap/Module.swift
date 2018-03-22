@@ -10,12 +10,14 @@ import UIKit
 
 class Module: NSObject{
     let type: String
+    let nextType: String
     let infoText: String
     let exampleText: String
     var passed: Bool
     
-    init(type: String, infoText: String, exampleText: String){
+    init(type: String, nextType: String, infoText: String, exampleText: String){
         self.type = type
+        self.nextType = nextType
         self.infoText = infoText
         self.exampleText = exampleText
         self.passed = false

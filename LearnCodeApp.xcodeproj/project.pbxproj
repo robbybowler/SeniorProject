@@ -17,17 +17,13 @@
 		2B0FAFD5201B9EF200FAAFF5 /* LearnCodeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0FAFD4201B9EF200FAAFF5 /* LearnCodeAppTests.swift */; };
 		2B0FAFE0201B9EF200FAAFF5 /* LearnCodeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0FAFDF201B9EF200FAAFF5 /* LearnCodeAppUITests.swift */; };
 		2B0FAFF1201BCEFC00FAAFF5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0FAFF0201BCEFC00FAAFF5 /* HomeViewController.swift */; };
-		2B22DE91201E804100169E1F /* LessonsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B22DE90201E804100169E1F /* LessonsTableViewController.swift */; };
-		2B22DE93201E849A00169E1F /* LessonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B22DE92201E849A00169E1F /* LessonTableViewCell.swift */; };
-		2B22DE95201E899500169E1F /* LessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B22DE94201E899500169E1F /* LessonView.swift */; };
-		2B22DE97201E8EF600169E1F /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B22DE96201E8EF600169E1F /* Lesson.swift */; };
-		2B22DE99201E910E00169E1F /* LessonStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B22DE98201E910E00169E1F /* LessonStore.swift */; };
-		2B35B7B2202014E800112107 /* DetailedLessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B35B7B1202014E800112107 /* DetailedLessonViewController.swift */; };
 		2B3C4F57205327E5004EEB22 /* FillBlankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3C4F56205327E5004EEB22 /* FillBlankViewController.swift */; };
 		2B64ECB02024C6FD00146AE9 /* ShinySpace.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2B64ECAF2024C6FD00146AE9 /* ShinySpace.gif */; };
 		2B674D2320435258001740ED /* RevealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B674D2220435258001740ED /* RevealViewController.swift */; };
+		2B743F1A206336F7000DB49E /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B743F19206336F7000DB49E /* Lesson.swift */; };
+		2B743F1C206338A5000DB49E /* LessonStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B743F1B206338A5000DB49E /* LessonStore.swift */; };
+		2B743F1E2063394D000DB49E /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B743F1D2063394D000DB49E /* Module.swift */; };
 		2B9C386D202D6E3E00478AEE /* LessonMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9C386C202D6E3E00478AEE /* LessonMapViewController.swift */; };
-		2BCACABB2022E62300FC04CE /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCACABA2022E62300FC04CE /* QuizViewController.swift */; };
 		2BCACABD2023750500FC04CE /* GifFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCACABC2023750500FC04CE /* GifFile.swift */; };
 		2BCACABF2023760F00FC04CE /* SpaceShip.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2BCACABE2023760E00FC04CE /* SpaceShip.gif */; };
 		2BCACAC12023780500FC04CE /* Space.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2BCACAC02023780500FC04CE /* Space.gif */; };
@@ -68,17 +64,13 @@
 		2B0FAFDF201B9EF200FAAFF5 /* LearnCodeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnCodeAppUITests.swift; sourceTree = "<group>"; };
 		2B0FAFE1201B9EF200FAAFF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B0FAFF0201BCEFC00FAAFF5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		2B22DE90201E804100169E1F /* LessonsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsTableViewController.swift; sourceTree = "<group>"; };
-		2B22DE92201E849A00169E1F /* LessonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonTableViewCell.swift; sourceTree = "<group>"; };
-		2B22DE94201E899500169E1F /* LessonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonView.swift; sourceTree = "<group>"; };
-		2B22DE96201E8EF600169E1F /* Lesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
-		2B22DE98201E910E00169E1F /* LessonStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonStore.swift; sourceTree = "<group>"; };
-		2B35B7B1202014E800112107 /* DetailedLessonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedLessonViewController.swift; sourceTree = "<group>"; };
 		2B3C4F56205327E5004EEB22 /* FillBlankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillBlankViewController.swift; sourceTree = "<group>"; };
 		2B64ECAF2024C6FD00146AE9 /* ShinySpace.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ShinySpace.gif; sourceTree = "<group>"; };
 		2B674D2220435258001740ED /* RevealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevealViewController.swift; sourceTree = "<group>"; };
+		2B743F19206336F7000DB49E /* Lesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
+		2B743F1B206338A5000DB49E /* LessonStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonStore.swift; sourceTree = "<group>"; };
+		2B743F1D2063394D000DB49E /* Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
 		2B9C386C202D6E3E00478AEE /* LessonMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonMapViewController.swift; sourceTree = "<group>"; };
-		2BCACABA2022E62300FC04CE /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		2BCACABC2023750500FC04CE /* GifFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifFile.swift; sourceTree = "<group>"; };
 		2BCACABE2023760E00FC04CE /* SpaceShip.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SpaceShip.gif; sourceTree = "<group>"; };
 		2BCACAC02023780500FC04CE /* Space.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Space.gif; sourceTree = "<group>"; };
@@ -164,7 +156,6 @@
 				2B9C3863202C064400478AEE /* LessonMap */,
 				2BCACAC22023781700FC04CE /* Gifs */,
 				2B0FAFEF201BCE9100FAAFF5 /* Home */,
-				2B22DE8D201E7FB900169E1F /* Lessons */,
 				2B0FAFC8201B9EF200FAAFF5 /* LaunchScreen.storyboard */,
 				2B0FAFCB201B9EF200FAAFF5 /* Info.plist */,
 				2B0FAFC3201B9EF200FAAFF5 /* LearnCodeApp.xcdatamodeld */,
@@ -199,21 +190,6 @@
 			path = "New Group";
 			sourceTree = "<group>";
 		};
-		2B22DE8D201E7FB900169E1F /* Lessons */ = {
-			isa = PBXGroup;
-			children = (
-				2B22DE90201E804100169E1F /* LessonsTableViewController.swift */,
-				2B22DE92201E849A00169E1F /* LessonTableViewCell.swift */,
-				2B22DE94201E899500169E1F /* LessonView.swift */,
-				2B35B7B1202014E800112107 /* DetailedLessonViewController.swift */,
-				2B22DE98201E910E00169E1F /* LessonStore.swift */,
-				2B22DE96201E8EF600169E1F /* Lesson.swift */,
-				2B64ECB22027BD4500146AE9 /* Quizzes */,
-				2B64ECB12027BD1800146AE9 /* Tutorials */,
-			);
-			path = Lessons;
-			sourceTree = "<group>";
-		};
 		2B5CE02C203602A200668C0F /* LessonLayout */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,25 +199,13 @@
 			path = LessonLayout;
 			sourceTree = "<group>";
 		};
-		2B64ECB12027BD1800146AE9 /* Tutorials */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Tutorials;
-			sourceTree = "<group>";
-		};
-		2B64ECB22027BD4500146AE9 /* Quizzes */ = {
-			isa = PBXGroup;
-			children = (
-				2BCACABA2022E62300FC04CE /* QuizViewController.swift */,
-			);
-			path = Quizzes;
-			sourceTree = "<group>";
-		};
 		2B9C3863202C064400478AEE /* LessonMap */ = {
 			isa = PBXGroup;
 			children = (
 				2B9C386C202D6E3E00478AEE /* LessonMapViewController.swift */,
+				2B743F1B206338A5000DB49E /* LessonStore.swift */,
+				2B743F19206336F7000DB49E /* Lesson.swift */,
+				2B743F1D2063394D000DB49E /* Module.swift */,
 				2B5CE02C203602A200668C0F /* LessonLayout */,
 			);
 			path = LessonMap;
@@ -581,18 +545,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B22DE97201E8EF600169E1F /* Lesson.swift in Sources */,
-				2B22DE91201E804100169E1F /* LessonsTableViewController.swift in Sources */,
+				2B743F1A206336F7000DB49E /* Lesson.swift in Sources */,
 				2B0FAFC5201B9EF200FAAFF5 /* LearnCodeApp.xcdatamodeld in Sources */,
-				2B22DE95201E899500169E1F /* LessonView.swift in Sources */,
-				2B35B7B2202014E800112107 /* DetailedLessonViewController.swift in Sources */,
 				2BCACABD2023750500FC04CE /* GifFile.swift in Sources */,
+				2B743F1E2063394D000DB49E /* Module.swift in Sources */,
 				2B0FAFBD201B9EF200FAAFF5 /* AppDelegate.swift in Sources */,
-				2BCACABB2022E62300FC04CE /* QuizViewController.swift in Sources */,
 				2B3C4F57205327E5004EEB22 /* FillBlankViewController.swift in Sources */,
-				2B22DE93201E849A00169E1F /* LessonTableViewCell.swift in Sources */,
 				2B0FAFF1201BCEFC00FAAFF5 /* HomeViewController.swift in Sources */,
-				2B22DE99201E910E00169E1F /* LessonStore.swift in Sources */,
+				2B743F1C206338A5000DB49E /* LessonStore.swift in Sources */,
 				2B9C386D202D6E3E00478AEE /* LessonMapViewController.swift in Sources */,
 				2B674D2320435258001740ED /* RevealViewController.swift in Sources */,
 			);

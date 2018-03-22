@@ -16,6 +16,7 @@ class FillBlankViewController: UIViewController {
     @IBOutlet var button1: UIButton!
     @IBOutlet var infoView: UIView!
     @IBOutlet var exampleView: UIView!
+    var currentModule: Module!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,11 +25,13 @@ class FillBlankViewController: UIViewController {
     }
     
     func layoutSetup(){
+        currentModule = LessonStore.instance.allLessons[0].Modules[0]
+        print(currentModule.infoText)
         let infoBlock = CGRect(origin: CGPoint(x:10, y:0), size: CGSize(width:view.frame.width-10, height:infoView.frame.height))
         let infoLabel = UILabel(frame: infoBlock)
         infoLabel.numberOfLines = 3
         //        label.backgroundColor = UIColor.red
-        infoLabel.text = "An item in these list of instructions is a line of code."
+        infoLabel.text = currentModule.infoText
         infoLabel.font = UIFont(name: "Helvetica", size: 20.0)
         infoView.addSubview(infoLabel)
         
@@ -36,7 +39,7 @@ class FillBlankViewController: UIViewController {
         let exampleLabel = UILabel(frame: exampleBlock)
         exampleLabel.numberOfLines = 3
         //        label.backgroundColor = UIColor.red
-        exampleLabel.text = "An item in these list of instructions is a line of code."
+        exampleLabel.text = currentModule.exampleText
         exampleLabel.font = UIFont(name: "Helvetica", size: 20.0)
         exampleView.addSubview(exampleLabel)
 
@@ -83,6 +86,16 @@ class FillBlankViewController: UIViewController {
     @IBAction func button2(_ sender: UIButton) {
         answerModal(correct: false)
     }
+//    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        switch segue.identifier {
+//            
+//        case "FillToReveal"?:
+//            
+//            
+//            
+//        }
+//    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

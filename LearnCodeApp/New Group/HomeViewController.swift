@@ -14,7 +14,6 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         BackGroundGif.loadGif(name: "Space")
-        LessonsTableViewController.load()
     }
 
 //    @IBAction func LoginButton(_ sender: UIButton) {

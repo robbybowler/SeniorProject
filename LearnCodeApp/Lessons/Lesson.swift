@@ -8,16 +8,17 @@
 
 import UIKit
 
-class Lesson: NSObject {
-    
-    let name: String
-    let lessonImage: UIImage
-    var passed: Bool
-    
-    init(name: String, lessonImage: UIImage){
-        self.name = name
-        self.lessonImage = lessonImage
-        self.passed = false
-    }
+//class Lesson: NSObject {
+//
+//    let name: String
+//    let lessonImage: UIImage
+//    var passed: Bool
+//
+//    init(name: String, lessonImage: UIImage){
+//        self.name = name
+//        self.lessonImage = lessonImage
+//        self.passed = false
+//    }
+//
+//}
 
-}

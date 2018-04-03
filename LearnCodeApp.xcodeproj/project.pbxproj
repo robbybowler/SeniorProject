@@ -17,13 +17,17 @@
 		2B0FAFD5201B9EF200FAAFF5 /* LearnCodeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0FAFD4201B9EF200FAAFF5 /* LearnCodeAppTests.swift */; };
 		2B0FAFE0201B9EF200FAAFF5 /* LearnCodeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0FAFDF201B9EF200FAAFF5 /* LearnCodeAppUITests.swift */; };
 		2B0FAFF1201BCEFC00FAAFF5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0FAFF0201BCEFC00FAAFF5 /* HomeViewController.swift */; };
+		2B2477F8206DB9F6000BD255 /* OrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2477F7206DB9F6000BD255 /* OrderTableViewController.swift */; };
+		2B2477FA206DBC3C000BD255 /* OrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2477F9206DBC3C000BD255 /* OrderCell.swift */; };
 		2B3C4F57205327E5004EEB22 /* FillBlankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3C4F56205327E5004EEB22 /* FillBlankViewController.swift */; };
+		2B4B47DC2072CFDF008872C1 /* MultiAnswerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4B47DB2072CFDF008872C1 /* MultiAnswerTableViewCell.swift */; };
 		2B64ECB02024C6FD00146AE9 /* ShinySpace.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2B64ECAF2024C6FD00146AE9 /* ShinySpace.gif */; };
 		2B674D2320435258001740ED /* RevealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B674D2220435258001740ED /* RevealViewController.swift */; };
 		2B743F1A206336F7000DB49E /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B743F19206336F7000DB49E /* Lesson.swift */; };
 		2B743F1C206338A5000DB49E /* LessonStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B743F1B206338A5000DB49E /* LessonStore.swift */; };
 		2B743F1E2063394D000DB49E /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B743F1D2063394D000DB49E /* Module.swift */; };
 		2B9C386D202D6E3E00478AEE /* LessonMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9C386C202D6E3E00478AEE /* LessonMapViewController.swift */; };
+		2BC30500206DCD14000DD8DD /* MultiAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC304FF206DCD14000DD8DD /* MultiAnswerViewController.swift */; };
 		2BCACABD2023750500FC04CE /* GifFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCACABC2023750500FC04CE /* GifFile.swift */; };
 		2BCACABF2023760F00FC04CE /* SpaceShip.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2BCACABE2023760E00FC04CE /* SpaceShip.gif */; };
 		2BCACAC12023780500FC04CE /* Space.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2BCACAC02023780500FC04CE /* Space.gif */; };
@@ -64,13 +68,17 @@
 		2B0FAFDF201B9EF200FAAFF5 /* LearnCodeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnCodeAppUITests.swift; sourceTree = "<group>"; };
 		2B0FAFE1201B9EF200FAAFF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B0FAFF0201BCEFC00FAAFF5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2B2477F7206DB9F6000BD255 /* OrderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewController.swift; sourceTree = "<group>"; };
+		2B2477F9206DBC3C000BD255 /* OrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCell.swift; sourceTree = "<group>"; };
 		2B3C4F56205327E5004EEB22 /* FillBlankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillBlankViewController.swift; sourceTree = "<group>"; };
+		2B4B47DB2072CFDF008872C1 /* MultiAnswerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiAnswerTableViewCell.swift; sourceTree = "<group>"; };
 		2B64ECAF2024C6FD00146AE9 /* ShinySpace.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ShinySpace.gif; sourceTree = "<group>"; };
 		2B674D2220435258001740ED /* RevealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevealViewController.swift; sourceTree = "<group>"; };
 		2B743F19206336F7000DB49E /* Lesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
 		2B743F1B206338A5000DB49E /* LessonStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonStore.swift; sourceTree = "<group>"; };
 		2B743F1D2063394D000DB49E /* Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
 		2B9C386C202D6E3E00478AEE /* LessonMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonMapViewController.swift; sourceTree = "<group>"; };
+		2BC304FF206DCD14000DD8DD /* MultiAnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiAnswerViewController.swift; sourceTree = "<group>"; };
 		2BCACABC2023750500FC04CE /* GifFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifFile.swift; sourceTree = "<group>"; };
 		2BCACABE2023760E00FC04CE /* SpaceShip.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SpaceShip.gif; sourceTree = "<group>"; };
 		2BCACAC02023780500FC04CE /* Space.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Space.gif; sourceTree = "<group>"; };
@@ -190,11 +198,31 @@
 			path = "New Group";
 			sourceTree = "<group>";
 		};
+		2B26576B2073060C0060D671 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				2B2477F7206DB9F6000BD255 /* OrderTableViewController.swift */,
+				2B2477F9206DBC3C000BD255 /* OrderCell.swift */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		2B26576C207306100060D671 /* MultiAnswer */ = {
+			isa = PBXGroup;
+			children = (
+				2BC304FF206DCD14000DD8DD /* MultiAnswerViewController.swift */,
+				2B4B47DB2072CFDF008872C1 /* MultiAnswerTableViewCell.swift */,
+			);
+			path = MultiAnswer;
+			sourceTree = "<group>";
+		};
 		2B5CE02C203602A200668C0F /* LessonLayout */ = {
 			isa = PBXGroup;
 			children = (
 				2B674D2220435258001740ED /* RevealViewController.swift */,
 				2B3C4F56205327E5004EEB22 /* FillBlankViewController.swift */,
+				2B26576C207306100060D671 /* MultiAnswer */,
+				2B26576B2073060C0060D671 /* Order */,
 			);
 			path = LessonLayout;
 			sourceTree = "<group>";
@@ -309,7 +337,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Robby Bowler";
 				TargetAttributes = {
 					2B0FAFB8201B9EF200FAAFF5 = {
@@ -485,20 +513,20 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-LearnCodeApp/Pods-LearnCodeApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework",
-				"${BUILT_PRODUCTS_DIR}/FRStretchImageView/FRStretchImageView.framework",
 				"${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework",
 				"${BUILT_PRODUCTS_DIR}/SAMCubicSpline/SAMCubicSpline.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftCubicSpline/SwiftCubicSpline.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyShadow/SwiftyShadow.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DynamicBlurView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FRStretchImageView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopupDialog.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SAMCubicSpline.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftCubicSpline.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyShadow.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -546,14 +574,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B743F1A206336F7000DB49E /* Lesson.swift in Sources */,
+				2BC30500206DCD14000DD8DD /* MultiAnswerViewController.swift in Sources */,
 				2B0FAFC5201B9EF200FAAFF5 /* LearnCodeApp.xcdatamodeld in Sources */,
 				2BCACABD2023750500FC04CE /* GifFile.swift in Sources */,
 				2B743F1E2063394D000DB49E /* Module.swift in Sources */,
+				2B4B47DC2072CFDF008872C1 /* MultiAnswerTableViewCell.swift in Sources */,
 				2B0FAFBD201B9EF200FAAFF5 /* AppDelegate.swift in Sources */,
 				2B3C4F57205327E5004EEB22 /* FillBlankViewController.swift in Sources */,
 				2B0FAFF1201BCEFC00FAAFF5 /* HomeViewController.swift in Sources */,
 				2B743F1C206338A5000DB49E /* LessonStore.swift in Sources */,
 				2B9C386D202D6E3E00478AEE /* LessonMapViewController.swift in Sources */,
+				2B2477F8206DB9F6000BD255 /* OrderTableViewController.swift in Sources */,
+				2B2477FA206DBC3C000BD255 /* OrderCell.swift in Sources */,
 				2B674D2320435258001740ED /* RevealViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -623,6 +655,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -630,6 +663,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -680,6 +714,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -687,6 +722,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

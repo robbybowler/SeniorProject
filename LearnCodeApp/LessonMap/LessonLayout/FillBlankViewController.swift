@@ -20,13 +20,13 @@ class FillBlankViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.navigationController?.navigationBar.isHidden = false
         layoutSetup()
     }
     
     func layoutSetup(){
         currentModule = LessonStore.instance.allLessons[0].Modules[0]
-        print(currentModule.infoText)
         let infoBlock = CGRect(origin: CGPoint(x:10, y:0), size: CGSize(width:view.frame.width-10, height:infoView.frame.height))
         let infoLabel = UILabel(frame: infoBlock)
         infoLabel.numberOfLines = 3
@@ -44,7 +44,7 @@ class FillBlankViewController: UIViewController {
         exampleView.addSubview(exampleLabel)
 
     }
-    @IBAction func buttonAction(sender: UIButton!) {
+    @objc func buttonAction(sender: UIButton!) {
         performSegue(withIdentifier: "Reveal", sender: sender)
     }
     
@@ -60,7 +60,7 @@ class FillBlankViewController: UIViewController {
 //                 self.navigationController?.popToRootViewController(animated: true)
             }
              buttonOne.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
-            buttonOne.backgroundColor = UIColor.green
+            buttonOne.backgroundColor = UIColor.cyan
             popup.addButtons([buttonOne])
             let dialogAppearance = PopupDialogDefaultView.appearance()
             dialogAppearance.titleFont = UIFont.boldSystemFont(ofSize: 20)
@@ -73,11 +73,11 @@ class FillBlankViewController: UIViewController {
             let popup = PopupDialog(title: title, message: message, image: nil)
             let buttonOne = CancelButton(title: "Try Again", height: 60) {
             }
-            buttonOne.backgroundColor = UIColor.red
+            buttonOne.backgroundColor = UIColor.yellow
             popup.addButtons([buttonOne])
             let dialogAppearance = PopupDialogDefaultView.appearance()
             dialogAppearance.titleFont = UIFont.boldSystemFont(ofSize: 20)
-            dialogAppearance.backgroundColor = UIColor.red
+            dialogAppearance.backgroundColor = UIColor.yellow
             self.present(popup, animated: true, completion: nil)
         }
         

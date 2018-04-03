@@ -29,6 +29,8 @@ class LessonMapViewController: UIViewController, UIScrollViewDelegate {
         SVProgressHUD.show()
         SVProgressHUD.dismiss(withDelay: 2)
         SVProgressHUD.setBackgroundColor(UIColor(displayP3Red: 0.5, green: 0.5, blue: 0.5, alpha: 0.8))
+        self.navigationController?.navigationBar.barTintColor = UIColor(displayP3Red: 88/256, green: 179/256, blue: 247/256, alpha: 1.0)
+        self.navigationController?.navigationBar.isOpaque = false
         
         houseImage.image = #imageLiteral(resourceName: "Composed-4")
         
@@ -39,11 +41,9 @@ class LessonMapViewController: UIViewController, UIScrollViewDelegate {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-   
-        self.tabBarController?.tabBar.isHidden = false
-//        self.navigationController?.navigationBar.isHidden = true
-        
         scrollView.setContentOffset(CGPoint(x: 0, y:houseImage.frame.height*4 - scrollView.frame.height), animated: false)
+
+        
         lessonButton.layer.cornerRadius = lessonButton.frame.height/2
         lessonButton.layer.borderWidth = 1
         //        ExampleButton.layer.borderColor = (UIColor(red: 159/255, green: 175/255, blue: 216/255, alpha: 0.7) as? CGColor)
@@ -70,8 +70,12 @@ class LessonMapViewController: UIViewController, UIScrollViewDelegate {
             id = "MapToReveal"
         }
         if sender.tag == 2{
-            id = "MapToFill"
+            id = "MapToOrder"
 
+        }
+        if sender.tag == 3{
+            id = "MapToMulti"
+            
         }
         performSegue(withIdentifier: id, sender: sender)
 

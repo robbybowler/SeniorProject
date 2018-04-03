@@ -23,6 +23,14 @@ class LessonStore: NSObject {
         allLessons.append(Lesson1)
         
     }
+    
+    func getModuleIndex(lesson: Lesson, module: Module)->Int{
+        if let i = lesson.Modules.index(of: module){
+            return i
+        }
+        exit(1)
+        
+    }
 //        let Lesson2 = Lesson(name: "What Are Variables?", lessonImage: #imageLiteral(resourceName: "ComputerGirl"))
 
 //

@@ -10,15 +10,18 @@ import UIKit
 import PopupDialog
 
 class RevealViewController: UIViewController {
+    var currentModule: Module!
+
     @IBOutlet var infoView: UIView!
     
+    @IBOutlet var revealButton: UIButton!
     @IBOutlet var exampleView: UIView!
     @IBOutlet var answerLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.navigationBar.isHidden = false
-        self.tabBarController?.tabBar.isHidden = true
+//        self.navigationController?.navigationBar.isHidden = false
+//        self.tabBarController?.tabBar.isHidden = true
         
         layoutSetup()
 
@@ -29,18 +32,11 @@ class RevealViewController: UIViewController {
         
         // Prepare the popup assets
         let title = "CORRECT!"
-        
-//        let message = "Thats right printing is easy ;)!"
-
         let image = UIImage(named: "none")
-        
         // Create the dialog
         let popup = PopupDialog(title: title, message: nil, image: image)
-        
-
         // Create buttons
         let buttonOne = DefaultButton(title: "Next", height: 60) {
-            print("Ah, maybe next time :)")
             self.navigationController?.popToRootViewController(animated: true)
         }
         
@@ -94,8 +90,15 @@ class RevealViewController: UIViewController {
     }
 
     @IBAction func revealButton(_ sender: UIButton) {
-        answerLabel.isHidden = false
-        modelExample()
+        if answerLabel.isHidden {
+            answerLabel.isHidden = false
+            sender.backgroundColor = UIColor.green
+
+            sender.setTitle("Next", for: .normal)
+        }
+        else{
+            performSegue(withIdentifier: "Fill", sender: sender)
+        }
 
     }
     override func didReceiveMemoryWarning() {

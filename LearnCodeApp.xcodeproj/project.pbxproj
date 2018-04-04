@@ -26,6 +26,7 @@
 		2B743F1A206336F7000DB49E /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B743F19206336F7000DB49E /* Lesson.swift */; };
 		2B743F1C206338A5000DB49E /* LessonStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B743F1B206338A5000DB49E /* LessonStore.swift */; };
 		2B743F1E2063394D000DB49E /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B743F1D2063394D000DB49E /* Module.swift */; };
+		2B873C17207400C30041A199 /* MultiAnswerModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B873C16207400C20041A199 /* MultiAnswerModule.swift */; };
 		2B9C386D202D6E3E00478AEE /* LessonMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9C386C202D6E3E00478AEE /* LessonMapViewController.swift */; };
 		2BC30500206DCD14000DD8DD /* MultiAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC304FF206DCD14000DD8DD /* MultiAnswerViewController.swift */; };
 		2BCACABD2023750500FC04CE /* GifFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCACABC2023750500FC04CE /* GifFile.swift */; };
@@ -77,6 +78,7 @@
 		2B743F19206336F7000DB49E /* Lesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
 		2B743F1B206338A5000DB49E /* LessonStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonStore.swift; sourceTree = "<group>"; };
 		2B743F1D2063394D000DB49E /* Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
+		2B873C16207400C20041A199 /* MultiAnswerModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiAnswerModule.swift; sourceTree = "<group>"; };
 		2B9C386C202D6E3E00478AEE /* LessonMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonMapViewController.swift; sourceTree = "<group>"; };
 		2BC304FF206DCD14000DD8DD /* MultiAnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiAnswerViewController.swift; sourceTree = "<group>"; };
 		2BCACABC2023750500FC04CE /* GifFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifFile.swift; sourceTree = "<group>"; };
@@ -234,6 +236,7 @@
 				2B743F1B206338A5000DB49E /* LessonStore.swift */,
 				2B743F19206336F7000DB49E /* Lesson.swift */,
 				2B743F1D2063394D000DB49E /* Module.swift */,
+				2B873C16207400C20041A199 /* MultiAnswerModule.swift */,
 				2B5CE02C203602A200668C0F /* LessonLayout */,
 			);
 			path = LessonMap;
@@ -579,6 +582,7 @@
 				2BCACABD2023750500FC04CE /* GifFile.swift in Sources */,
 				2B743F1E2063394D000DB49E /* Module.swift in Sources */,
 				2B4B47DC2072CFDF008872C1 /* MultiAnswerTableViewCell.swift in Sources */,
+				2B873C17207400C30041A199 /* MultiAnswerModule.swift in Sources */,
 				2B0FAFBD201B9EF200FAAFF5 /* AppDelegate.swift in Sources */,
 				2B3C4F57205327E5004EEB22 /* FillBlankViewController.swift in Sources */,
 				2B0FAFF1201BCEFC00FAAFF5 /* HomeViewController.swift in Sources */,

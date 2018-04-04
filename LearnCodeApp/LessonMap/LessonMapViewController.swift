@@ -12,9 +12,9 @@ import SwiftCubicSpline
 
 class LessonMapViewController: UIViewController, UIScrollViewDelegate {
 
+    @IBOutlet var lessonButtons: [UIButton]!
     @IBOutlet var houseImage: UIImageView!
     
-    @IBOutlet var lessonButton: UIButton!
     
     @IBOutlet var scrollHeightContraint: NSLayoutConstraint!
     
@@ -42,10 +42,14 @@ class LessonMapViewController: UIViewController, UIScrollViewDelegate {
     
     override func viewDidAppear(_ animated: Bool) {
         scrollView.setContentOffset(CGPoint(x: 0, y:houseImage.frame.height*4 - scrollView.frame.height), animated: false)
-
         
-        lessonButton.layer.cornerRadius = lessonButton.frame.height/2
-        lessonButton.layer.borderWidth = 1
+        for lesson in lessonButtons{
+            lesson.layer.cornerRadius = lesson.frame.height/2
+            lesson.layer.borderWidth = 1
+        }
+        
+        
+        
         //        ExampleButton.layer.borderColor = (UIColor(red: 159/255, green: 175/255, blue: 216/255, alpha: 0.7) as? CGColor)
    
     }
@@ -71,14 +75,11 @@ class LessonMapViewController: UIViewController, UIScrollViewDelegate {
         }
         if sender.tag == 2{
             id = "MapToOrder"
-
         }
         if sender.tag == 3{
             id = "MapToMulti"
-            
         }
         performSegue(withIdentifier: id, sender: sender)
-
     }
     
     /*

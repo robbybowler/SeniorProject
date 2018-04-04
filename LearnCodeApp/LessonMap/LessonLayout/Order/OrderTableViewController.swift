@@ -22,6 +22,15 @@ class OrderTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
+    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+        
+//        currentModule = LessonStore.instance.allLessons[0].Modules[0]
+        return true
+    }
+    
+    @IBAction func EditButton(_ sender: UIButton) {
+        tableView.isEditing = !tableView.isEditing
+    }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
@@ -85,10 +94,6 @@ class OrderTableViewController: UITableViewController {
         // Configure the cell...
 
         return cell
-    }
-    
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        return true
     }
 
     /*

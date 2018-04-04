@@ -115,10 +115,13 @@
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Composed-1_preview" translatesAutoresizingMaskIntoConstraints="NO" id="GVg-FR-fZ8">
                                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="1250"/>
                                                             </imageView>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Map Red" translatesAutoresizingMaskIntoConstraints="NO" id="W1Y-XA-xzA">
+                                                                <rect key="frame" x="0.0" y="-2914" width="375" height="4020"/>
+                                                            </imageView>
                                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xPS-xo-8sp">
-                                                                <rect key="frame" x="172" y="963" width="30" height="30"/>
+                                                                <rect key="frame" x="185" y="1079" width="35" height="35"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="backgroundColor" red="0.8579973578453064" green="0.36110401153564453" blue="0.36860290169715881" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <state key="normal" title="1">
                                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 </state>
@@ -127,9 +130,9 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycr-uT-SYv">
-                                                                <rect key="frame" x="172" y="899" width="30" height="30"/>
+                                                                <rect key="frame" x="128" y="936" width="35" height="35"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="backgroundColor" red="0.8579973578453064" green="0.36110401153564453" blue="0.36860290169715881" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <state key="normal" title="2">
                                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 </state>
@@ -138,9 +141,9 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wyy-SO-BEU">
-                                                                <rect key="frame" x="172" y="844" width="30" height="30"/>
+                                                                <rect key="frame" x="81" y="806" width="35" height="35"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="backgroundColor" red="0.8579973578453064" green="0.36110401153564453" blue="0.36860290169715881" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <state key="normal" title="3">
                                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 </state>
@@ -149,9 +152,9 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbG-ac-fsY">
-                                                                <rect key="frame" x="172" y="786" width="30" height="30"/>
+                                                                <rect key="frame" x="137" y="676" width="35" height="35"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="backgroundColor" red="0.8579973578453064" green="0.36110401153564453" blue="0.36860290169715881" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <state key="normal" title="4">
                                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 </state>
@@ -164,7 +167,11 @@
                                                         <constraints>
                                                             <constraint firstItem="GVg-FR-fZ8" firstAttribute="top" secondItem="FSb-Dl-UZx" secondAttribute="top" id="Wfc-Rg-0ro"/>
                                                             <constraint firstItem="GVg-FR-fZ8" firstAttribute="leading" secondItem="FSb-Dl-UZx" secondAttribute="leading" id="Zc8-Q5-lDN"/>
+                                                            <constraint firstItem="W1Y-XA-xzA" firstAttribute="leading" secondItem="FSb-Dl-UZx" secondAttribute="leading" id="ebD-xz-JLe"/>
                                                             <constraint firstAttribute="bottom" secondItem="GVg-FR-fZ8" secondAttribute="bottom" id="ezR-ab-ymc"/>
+                                                            <constraint firstAttribute="trailing" secondItem="W1Y-XA-xzA" secondAttribute="trailing" id="gMT-fz-1jS"/>
+                                                            <constraint firstItem="W1Y-XA-xzA" firstAttribute="top" secondItem="FSb-Dl-UZx" secondAttribute="top" constant="-2914" id="ohH-NU-DLk"/>
+                                                            <constraint firstAttribute="bottom" secondItem="W1Y-XA-xzA" secondAttribute="bottom" constant="144" id="rYh-X3-Ouf"/>
                                                             <constraint firstAttribute="trailing" secondItem="GVg-FR-fZ8" secondAttribute="trailing" id="x5E-0u-AUW"/>
                                                         </constraints>
                                                     </view>
@@ -209,9 +216,12 @@
                     <connections>
                         <outlet property="houseImage" destination="K8q-aK-3S4" id="bgM-wj-Jcw"/>
                         <outlet property="imageStackView" destination="2IU-MV-23M" id="UeL-7P-cdX"/>
-                        <outlet property="lessonButton" destination="wyy-SO-BEU" id="qma-kc-f1m"/>
                         <outlet property="scrollHeightContraint" destination="2FA-fD-5AR" id="wv4-D5-OmF"/>
                         <outlet property="scrollView" destination="xXM-Xp-Zhh" id="6Ff-8B-txE"/>
+                        <outletCollection property="lessonButtons" destination="xPS-xo-8sp" collectionClass="NSMutableArray" id="OtQ-St-gTH"/>
+                        <outletCollection property="lessonButtons" destination="ycr-uT-SYv" collectionClass="NSMutableArray" id="gDO-Ub-MgY"/>
+                        <outletCollection property="lessonButtons" destination="wyy-SO-BEU" collectionClass="NSMutableArray" id="Io4-kR-6Pu"/>
+                        <outletCollection property="lessonButtons" destination="pbG-ac-fsY" collectionClass="NSMutableArray" id="fAl-jC-UvU"/>
                         <segue destination="NVR-hc-9tD" kind="show" identifier="MapToFill" id="KC4-NS-Sze"/>
                         <segue destination="9sf-0n-jKq" kind="show" identifier="MapToReveal" id="HdG-e5-OOx"/>
                         <segue destination="I4a-1E-Hsu" kind="show" identifier="MapToOrder" id="owr-oi-Fly"/>
@@ -458,8 +468,16 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDS-4e-bHi">
+                                    <rect key="frame" x="312" y="55" width="30" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="edit"/>
+                                    <connections>
+                                        <action selector="EditButton:" destination="I4a-1E-Hsu" eventType="touchUpInside" id="YPN-mb-24o"/>
+                                    </connections>
+                                </button>
                             </subviews>
-                            <color key="backgroundColor" red="0.34735935926437378" green="0.70268303155899048" blue="0.96866589784622192" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </view>
                         <view key="tableFooterView" contentMode="scaleToFill" id="uHi-xM-I25">
                             <rect key="frame" x="0.0" y="253" width="375" height="151"/>
@@ -474,7 +492,7 @@
                                     </state>
                                 </button>
                             </subviews>
-                            <color key="backgroundColor" red="0.34735935926437378" green="0.70268303155899048" blue="0.96866589784622192" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="OrderCell" rowHeight="84" id="vj6-Gz-LxP" customClass="OrderCell" customModule="LearnCodeApp" customModuleProvider="target">
@@ -565,6 +583,7 @@
         <image name="Composed-2-2" width="1081" height="3840"/>
         <image name="Composed-3-3" width="1081" height="3840"/>
         <image name="Composed-5" width="1080" height="3840"/>
+        <image name="Map Red" width="760" height="13356"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="owr-oi-Fly"/>

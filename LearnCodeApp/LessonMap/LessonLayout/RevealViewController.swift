@@ -11,6 +11,8 @@ import PopupDialog
 
 class RevealViewController: UIViewController {
     var currentModule: Module!
+    var currentLesson: Lesson!
+    var moduleIndex: Int!
 
     @IBOutlet var infoView: UIView!
     
@@ -27,6 +29,8 @@ class RevealViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+
+
     
     func modelExample(){
         
@@ -97,7 +101,12 @@ class RevealViewController: UIViewController {
             sender.setTitle("Next", for: .normal)
         }
         else{
-            performSegue(withIdentifier: "Fill", sender: sender)
+            if currentModule.nextType != "Finished"{
+                performSegue(withIdentifier: currentModule.nextType, sender: sender)
+            }else{
+                navigationController?.popToRootViewController(animated: true)
+            }
+            
         }
 
     }
@@ -106,6 +115,37 @@ class RevealViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case "Fill"?:
+            let controller = segue.destination as! FillBlankViewController
+            controller.currentLesson = currentLesson
+            controller.currentModule = currentLesson.modules[moduleIndex+1]
+            controller.moduleIndex = moduleIndex + 1
+            
+        case "Reveal":
+            let controller = segue.destination as! RevealViewController
+            controller.currentLesson = currentLesson
+            controller.currentModule = currentLesson.modules[moduleIndex+1]
+            controller.moduleIndex = moduleIndex + 1
+            
+        case "Order":
+            let controller = segue.destination as! OrderTableViewController
+            controller.currentLesson = currentLesson
+            controller.currentModule = currentLesson.modules[moduleIndex+1]
+            controller.moduleIndex = moduleIndex + 1
+            
+        case "Multi":
+            let controller = segue.destination as! MultiAnswerViewController
+            controller.currentLesson = currentLesson
+            controller.currentModule = currentLesson.modules[moduleIndex+1]
+            controller.moduleIndex = moduleIndex + 1
+        default:
+            print("Segue didn't work")
+            break
+        }
+        
+    }
 
     /*
     // MARK: - Navigation

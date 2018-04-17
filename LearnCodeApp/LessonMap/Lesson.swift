@@ -12,16 +12,22 @@ class Lesson: NSObject {
     
     let name: String
     var passed: Bool
-    var Modules: [Module]
+    var modules: [Module]
     
     init(name: String){
         self.name = name
         self.passed = false
-        self.Modules = []
+        self.modules = []
+        
+    }
+    override init(){
+        self.name = "sean"
+        self.passed = false
+        self.modules = []
     }
     
     func addModule(module: Module){
-        self.Modules.append(module)
+        self.modules.append(module)
     }
     
 }

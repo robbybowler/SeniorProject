@@ -15,7 +15,7 @@ class MultiAnswerModule: NSObject{
     let correctAnswers: [String]
     var passed: Bool
     
-    init(nextType: String, infoText: String, answers: [String],correctAnswers: [String]){
+    init(nextType: String, infoText: String, answers: [String], correctAnswers: [String]){
         self.nextType = nextType
         self.infoText = infoText
         self.answers = answers

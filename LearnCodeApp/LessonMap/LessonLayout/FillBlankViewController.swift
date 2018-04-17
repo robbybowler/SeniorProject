@@ -12,21 +12,26 @@ import PopupDialog
 
 class FillBlankViewController: UIViewController {
     
+    var currentModule: Module!
+    var currentLesson: Lesson!
+    var moduleIndex: Int!
+    
     @IBOutlet var button2: UIButton!
     @IBOutlet var button1: UIButton!
     @IBOutlet var infoView: UIView!
     @IBOutlet var exampleView: UIView!
-    var currentModule: Module!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    
+
         self.navigationController?.navigationBar.isHidden = false
         layoutSetup()
     }
     
     func layoutSetup(){
-        currentModule = LessonStore.instance.allLessons[0].Modules[0]
+        currentModule = LessonStore.instance.allLessons[0].modules[1]
         let infoBlock = CGRect(origin: CGPoint(x:10, y:0), size: CGSize(width:view.frame.width-10, height:infoView.frame.height))
         let infoLabel = UILabel(frame: infoBlock)
         infoLabel.numberOfLines = 3
@@ -42,10 +47,20 @@ class FillBlankViewController: UIViewController {
         exampleLabel.text = currentModule.exampleText
         exampleLabel.font = UIFont(name: "Helvetica", size: 20.0)
         exampleView.addSubview(exampleLabel)
+        
+        if currentModule != nil{
+            button1.setTitle(currentModule.buttonLeft, for: .normal)
+            button2.setTitle(currentModule.buttonRight, for: .normal)
+        }
+   
 
     }
     @objc func buttonAction(sender: UIButton!) {
-        performSegue(withIdentifier: "Reveal", sender: sender)
+        if currentModule.nextType != "Finished"{
+            performSegue(withIdentifier: currentModule.nextType, sender: sender)
+        }else{
+            navigationController?.popToRootViewController(animated: true)
+        }
     }
     
     func answerModal(correct: Bool){
@@ -105,6 +120,38 @@ class FillBlankViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case "Fill"?:
+            let controller = segue.destination as! FillBlankViewController
+            controller.currentLesson = currentLesson
+            controller.currentModule = currentLesson.modules[moduleIndex+1]
+            controller.moduleIndex = moduleIndex + 1
+            
+        case "Reveal":
+            let controller = segue.destination as! RevealViewController
+            controller.currentLesson = currentLesson
+            controller.currentModule = currentLesson.modules[moduleIndex+1]
+            controller.moduleIndex = moduleIndex + 1
+            
+        case "Order":
+            let controller = segue.destination as! OrderTableViewController
+            controller.currentLesson = currentLesson
+            controller.currentModule = currentLesson.modules[moduleIndex+1]
+            controller.moduleIndex = moduleIndex + 1
+            
+        case "Multi":
+            let controller = segue.destination as! MultiAnswerViewController
+            controller.currentLesson = currentLesson
+            controller.currentModule = currentLesson.modules[moduleIndex+1]
+            controller.moduleIndex = moduleIndex + 1
+        default:
+            print("Segue didn't work")
+            break
+        }
+        
     }
     
 

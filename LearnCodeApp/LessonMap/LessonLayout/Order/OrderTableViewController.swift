@@ -10,6 +10,10 @@ import UIKit
 
 class OrderTableViewController: UITableViewController {
     
+    var currentModule: Module!
+    var currentLesson: Lesson!
+    var moduleIndex: Int!
+    
     @IBOutlet weak var infoLabel: UILabel!
     
     override func viewDidLoad() {
@@ -95,7 +99,38 @@ class OrderTableViewController: UITableViewController {
 
         return cell
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case "Fill"?:
+            let controller = segue.destination as! FillBlankViewController
+            controller.currentLesson = currentLesson
+            controller.currentModule = currentLesson.modules[moduleIndex+1]
+            controller.moduleIndex = moduleIndex + 1
+            
+        case "Reveal":
+            let controller = segue.destination as! RevealViewController
+            controller.currentLesson = currentLesson
+            controller.currentModule = currentLesson.modules[moduleIndex+1]
+            controller.moduleIndex = moduleIndex + 1
+            
+        case "Order":
+            let controller = segue.destination as! OrderTableViewController
+            controller.currentLesson = currentLesson
+            controller.currentModule = currentLesson.modules[moduleIndex+1]
+            controller.moduleIndex = moduleIndex + 1
+            
+        case "Multi":
+            let controller = segue.destination as! MultiAnswerViewController
+            controller.currentLesson = currentLesson
+            controller.currentModule = currentLesson.modules[moduleIndex+1]
+            controller.moduleIndex = moduleIndex + 1
+        default:
+            print("Segue didn't work")
+            break
+        }
+        
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

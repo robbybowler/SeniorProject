@@ -11,6 +11,8 @@ import SVProgressHUD
 import SwiftCubicSpline
 
 class LessonMapViewController: UIViewController, UIScrollViewDelegate {
+    
+    var lessonPicked: Int!
 
     @IBOutlet var lessonButtons: [UIButton]!
     @IBOutlet var houseImage: UIImageView!
@@ -47,18 +49,11 @@ class LessonMapViewController: UIViewController, UIScrollViewDelegate {
             lesson.layer.cornerRadius = lesson.frame.height/2
             lesson.layer.borderWidth = 1
         }
-        
-        
-        
+
         //        ExampleButton.layer.borderColor = (UIColor(red: 159/255, green: 175/255, blue: 216/255, alpha: 0.7) as? CGColor)
    
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        switch segue.identifier{
-//            
-//        }
-//    }
   
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -79,9 +74,48 @@ class LessonMapViewController: UIViewController, UIScrollViewDelegate {
         if sender.tag == 3{
             id = "MapToMulti"
         }
+        lessonPicked = Int((sender.titleLabel?.text)!)
         performSegue(withIdentifier: id, sender: sender)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let lesson = LessonStore.instance.allLessons[lessonPicked - 1]
+        let module = LessonStore.instance.allLessons[lessonPicked - 1].modules[0]
+        switch segue.identifier {
+            
+        case "MapToFill"?:
+            let controller = segue.destination as! FillBlankViewController
+            controller.currentLesson = lesson
+            controller.currentModule = module
+            controller.moduleIndex = 0
+      
+        case "MapToReveal":
+            let controller = segue.destination as! RevealViewController
+            controller.currentLesson = lesson
+            controller.currentModule = module
+            controller.moduleIndex = 0
+
+        case "MapToOrder":
+            let controller = segue.destination as! OrderTableViewController
+            controller.currentLesson = lesson
+            controller.currentModule = module
+            controller.moduleIndex = 0
+
+        case "MapToMulti":
+            let controller = segue.destination as! MultiAnswerViewController
+            controller.currentLesson = lesson
+            controller.currentModule = module
+            controller.moduleIndex = 0
+
+        default:
+            print("Segue didn't work")
+            break
+        }
+            
+    }
+    
+
+
     /*
     // MARK: - Navigation
 

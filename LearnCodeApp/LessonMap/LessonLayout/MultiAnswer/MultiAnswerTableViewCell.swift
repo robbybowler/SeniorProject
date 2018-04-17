@@ -16,7 +16,7 @@ class MultiAnswerTableViewCell: UITableViewCell {
         super.awakeFromNib()
         selectionStyle = .none
         answerButton.backgroundColor = UIColor.green
-        answerButton.layer.cornerRadius = answerButton.frame.height/2
+//        answerButton.layer.cornerRadius = answerButton.frame.height/2
         
 //        cellView.layer.cornerRadius = 120
 //        cellView.layer.shadowRadius = 3
